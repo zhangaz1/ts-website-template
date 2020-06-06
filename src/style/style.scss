@@ -13,26 +13,8 @@ body {
   margin: 0;
   padding: 0;
 }
-.header-nav {
-  position: fixed;
-  left: 2rem;
-  top: 2rem;
-  color: $headerFontColor;
-  font-size: 1.5rem;
-  z-index: 999;
-  @media (max-width: 600px) {
-    left: 2rem;
-    top: 0.7rem !important;
-  }
-}
-
-.small-nav {
-  left: 2rem;
-  top: 0.7rem !important;
-}
-
 header {
-  position: fixed;
+  // position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -64,31 +46,6 @@ header {
   @media (min-width: 600px) {
     height: 6.813rem;
   }
-}
-
-.small-header {
-  height: auto;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
-  justify-content: flex-start !important;
-  padding-left: 5rem;
-  div {
-    margin: 0.53rem 0.15rem;
-  }
-
-  span {
-    font-size: 1.7rem !important;
-    transition: all 0.3s ease-in-out;
-  }
-  transition: box-shadow 0.5s ease-in-out;
-}
-
-.page {
-  height: 100%;
-  //   background-color: yellow;
-  //   overflow: hidden;
-  max-width: var(--content-width);
-  margin: 0 auto;
-  padding: 5vh 5vw 10vh;
 }
 
 main {
@@ -175,64 +132,6 @@ main {
     font-size: 16px !important;
     line-height: 22px !important;
   }
-}
-
-.flex-row-container {
-  display: flex;
-  flex-direction: row;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  img {
-    width: 100%;
-  }
-  @media (max-width: 600px) {
-    flex-direction: column;
-    .mobile-first-position {
-      order: -1;
-    }
-  }
-}
-
-.hr-top {
-  border-top: 1px solid #dadada;
-}
-.flex-2-row {
-  flex: 1;
-  @media (max-width: 600px) {
-    padding: 1em 0 !important;
-  }
-}
-.pad-left-2 {
-  padding-left: 2em;
-  @media (max-width: 600px) {
-    padding-left: 0 !important;
-  }
-}
-
-p,
-ul {
-  font-size: 2rem;
-  font-weight: 100;
-}
-
-.round-button {
-  border: 1px solid #dadada;
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-size: 16px;
-  line-height: 1;
-  display: inline-block;
-  margin: 5px 5px 0 0;
-  min-width: 7rem;
-  text-align: center;
-  transition: all 0.2s ease-in;
-}
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-a {
-  -webkit-font-smoothing: antialiased;
 }
 
 footer {
